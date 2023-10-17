@@ -87,13 +87,13 @@ namespace EventBus.Base.SubManagers
             }
         }
 
-        public IEnumerable<SubscriptionInfo> GetHandlerForEvent<T>() where T : IntegrationEvent
+        public IEnumerable<SubscriptionInfo> GetHandlersForEvent<T>() where T : IntegrationEvent
         {
             var key = GetEventKey<T>();
             return GetHandlerForEvent(key);
         }
 
-        public IEnumerable<SubscriptionInfo> GethandlerForEvent(string eventName) => _handlers(eventName);
+        public IEnumerable<SubscriptionInfo> GetHandlersForEvent(string eventName) => _handlers[eventName];
 
 
 
@@ -103,7 +103,7 @@ namespace EventBus.Base.SubManagers
             handler?.Invoke(this, eventName);
         }
 
-        public IEnumerable<SubscriptionInfo> GethandlerForEvent(string eventName) => _handlers[eventName];
+        public IEnumerable<SubscriptionInfo> GetHandlerForEvent(string eventName) => _handlers[eventName];
 
         private SubscriptionInfo FindSubscriptionToRemove<T, TH>() where T : IntegrationEvent where TH : IIntegrationEventHandler<T>
         {

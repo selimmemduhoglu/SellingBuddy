@@ -17,8 +17,6 @@ namespace EventBus.Base.Events
 
         public EventBusConfig EventBusConfig { get; set; }
 
-
-
         public BaseEventBus(IServiceProvider serviceProvider, EventBusConfig config)
         {
             EventBusConfig = config;

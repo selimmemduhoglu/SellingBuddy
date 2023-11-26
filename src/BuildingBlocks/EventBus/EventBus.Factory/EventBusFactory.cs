@@ -1,6 +1,4 @@
-﻿
-
-using EventBus.AzureServiceBus;
+﻿using EventBus.AzureServiceBus;
 using EventBus.Base;
 using EventBus.Base.Abstraction;
 using EventBus.RabbitMQ;
@@ -15,6 +13,7 @@ namespace EventBus.Factory
             // Bu kullanım güzel bir kullanım yenilikçi
             return config.EventBusType switch
             {
+
                 EventBusType.AzureServiceBus => new EventBusServiceBus(serviceProvider, config),
                 _ => new EventBusRabbitMQ(serviceProvider, config)
 

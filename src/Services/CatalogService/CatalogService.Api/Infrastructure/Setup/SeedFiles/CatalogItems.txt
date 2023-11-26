@@ -1,0 +1,7 @@
+﻿CatalogTypename,CatalogBrandName,Description,name,Price,PictureFileName,availablestock,onreorder
+T-shirt,.NET,.NET Bot Black Hoodie, and more
+CatalogTypename,CatalogBrandName,Description,name,Price,PictureFileName,availablestock,onreorderT-shirt,.NET,.NET Bot Black Hoodie, and more
+T-shirt,.NET,.NET Bot Black Hoodie, and more
+CatalogTypename,CatalogBrandName,Description,name,Price,PictureFileName,availablestock,onreorderT-shirt,.NET,.NET Bot Black Hoodie, and more
+T-shirt,.NET,.NET Bot Black Hoodie, and more
+CatalogTypename,CatalogBrandName,Description,name,Price,PictureFileName,availablestock,onreorderT-shirt,.NET,.NET Bot Black Hoodie, and more
